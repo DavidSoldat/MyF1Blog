@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 body {
   color: #222;
@@ -11,16 +13,21 @@ img {
 }
 main {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   max-width: 800px;
   margin: 0 auto;
 }
 header {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
+  border-bottom: 1px solid #888;
 }
+
 header a {
   text-decoration: none;
   color: inherit;
@@ -130,4 +137,14 @@ div.post-page div.content {
 }
 .f1span {
   color: #dc0000;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-grow: 1;
 }
